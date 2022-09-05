@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script> function plus(){
+        let a = Number(document.getElementById("a").value)
+        let b = Number(document.getElementById("b").value)
+        let c = Number(document.getElementById("SE").value)
+        if (c == 1) {
+            c = a + b
+        }
+        else if(c == 2) {
+            c = a - b
+        }
+        else if(c == 3) {
+            c = a * b
+        }
+        else if(c == 4) {
+            c = a / b
+        }
+        document.getElementById("c").value = c
+    
+    }
+        </script>
+</head>
+<body>
+    <input type="text" id="a"> 
+    <select id="SE">
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+    </select>
+    <input type="text" id="b"> = <input type="text" id="c"> <button onclick="plus()"> gogo </button>
+</body>
+</html>
